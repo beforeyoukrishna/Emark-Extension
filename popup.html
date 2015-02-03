@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body { 
+                min-width: 420px; 
+                overflow-x: hidden; 
+                font-family:sans-serif; 
+                font-size: 12px; 
+            }
+             textarea { 
+                width: 380px; 
+            }
+            input#save { 
+                font-weight: bold; width: auto; 
+            }
+			select{
+			width:380px;
+			}
+			#save1{
+			margin:5px 90px 7px 11px;
+			}
+        </style>
+        <script src="popup.js"></script>
+		<script>
+		/*function tab()
+		{
+		alert();
+		window.open("popup1.html");
+		}*/
+		
+	</script>
+	</head>
+    <body>
+        <form id="addbookmark">
+            <p><label for="title">Title</label><br/><br>
+            <input type="text" id="title" name="title" size="50" value="" /></p>
+            <p><label for="url">Url</label><br /><br>
+            <input type="text" id="url" name="url" size="50" value="" /></p>
+            <p><label for="description">Description</label><br /><br>
+            <textarea id="description" name="description" rows="3" cols="20"></textarea></p>
+            <p><label for="tags">Categories:</label></p>
+            <p><select name="tags" id="tags">
+			<option selected>---Select---</option>
+			<option>Games</option>
+			<option>Sports</option>
+			<option>News</option>
+			<option>App</option>
+			<option>College</option>
+			</select></br> </br> 
+			    <input id="save1" type="button" value="Emark This" />
+                <input id="save1" type="button" value="Emark Full Session" onclick="tab()"/>
+                <span id="status-display"></span>
+            </p>
+        </form>
+    </body>
+</html>
+<!--<script type="text/javascript">
+			var c = document.getElementsByTagName('meta');
+			var description;
+			for (var x=0,y=c.length; x<y; x++) 
+			{
+					if (c[x].name.toLowerCase() == "description") 
+					{
+						description = c[x];
+					}
+			}
+document.write('<a href="'+b+'">'+a+'<\/a><br />'+description.content+'<br />');
+document.write('<span id="green">'+b+'<\/span>');			
+			</script>-->
